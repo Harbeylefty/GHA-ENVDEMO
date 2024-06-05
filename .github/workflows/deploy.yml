@@ -11,14 +11,14 @@ jobs:
     env: 
       MONGODB_CLUSTER_ADDRESS: cluster0.dgoxrrl.mongodb.net
       MONGODB_USERNAME: harbeylefty
-      MONGODB_PASSWORD: 3ABwxxAROhQU2KG1
+      MONGODB_PASSWORD: hFZjIAzFYX1i7weK
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
         uses: actions/checkout@v4
       - name: Cache dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: npm-deps-${{ hashFiles('**/package-lock.json') }}
@@ -38,4 +38,4 @@ jobs:
       - name: Output information
         run: |        
           echo "MONGODB_USERNAME:  ${{  env.MONGODB_USERNAME  }}"
-          echo "MONGO_DB_NAME: ${{  env.MONGODB_DB_NAME  }}"
+          echo "MONGO_DB_NAME: $MONGODB_DB_NAME"
