@@ -12,7 +12,7 @@ jobs:
       MONGODB_CLUSTER_ADDRESS: cluster0.dgoxrrl.mongodb.net
       MONGODB_USERNAME: harbeylefty
       MONGODB_PASSWORD: M05Xvm2DOOBDDUpo
-      PORT: 8080
+      PORT: 3000
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
