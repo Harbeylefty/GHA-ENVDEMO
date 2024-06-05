@@ -11,7 +11,7 @@ jobs:
     env: 
       MONGODB_CLUSTER_ADDRESS: cluster0.dgoxrrl.mongodb.net
       MONGODB_USERNAME: harbeylefty
-      MONGODB_PASSWORD: hFZjIAzFYX1i7weK
+      MONGODB_PASSWORD: M05Xvm2DOOBDDUpo
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
